@@ -94,7 +94,7 @@ static void racing_penguin_act_race(void) {
     }
 
     if (mario_is_in_air_action()) {
-        if (o->oTimer > 60) {
+        if (o->oTimer > 120) {
             o->oRacingPenguinMarioCheated = TRUE;
         }
     } else {
