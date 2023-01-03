@@ -16,7 +16,7 @@ GRUCODE ?= f3d_old
 # If COMPARE is 1, check the output sha1sum when building 'all'
 COMPARE ?= 1
 # If NON_MATCHING is 1, define the NON_MATCHING and AVOID_UB macros when building (recommended)
-NON_MATCHING ?= 0
+NON_MATCHING ?= 1
 # Build for the N64 (turn this off for ports)
 TARGET_N64 ?= 0
 # Build for Emscripten/WebGL
@@ -24,7 +24,7 @@ TARGET_WEB ?= 0
 # Build for Nintendo 3DS
 TARGET_N3DS ?= 1
 # Compiler to use (ido or gcc)
-COMPILER ?= ido
+COMPILER ?= gcc
 
 # Automatic settings only for ports
 ifeq ($(TARGET_N64),0)
